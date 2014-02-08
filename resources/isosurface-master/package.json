@@ -1,0 +1,28 @@
+{
+  "name": "isosurface",
+  "version": "0.1.0",
+  "description": "3D isosurface polygonizer",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/isosurface.git"
+  },
+  "keywords": [
+    "voxel",
+    "isosurface",
+    "level",
+    "set",
+    "0fps",
+    "surface",
+    "nets",
+    "marching",
+    "cubes",
+    "tetrahedra"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "20517b13d1db64cdbf0498eb9eee728265faee9b"
+}

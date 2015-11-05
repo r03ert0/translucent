@@ -76,15 +76,15 @@ function createTestData()
 {
 	var oReq = new XMLHttpRequest();
 //	oReq.open("GET", "sum.img", true);
-	oReq.open("GET", "5.average-phir.img", true);
+	oReq.open("GET", "resources/5.average-phir.img", true);
 	oReq.responseType = "arraybuffer";
 	oReq.onload = function(oEvent)
 	{
 		var volume=new Float32Array(45*54*45);
 		var	dv=new DataView(this.response);
 		for(i=0;i<45*54*45;i++)
-//			volume[i]=dv.getInt16(i*2,true)-700;
 			volume[i]=dv.getFloat32(i*4,true);
+//			volume[i]=dv.getInt16(i*2,true)-700;
 		cmap={data:volume, dims:[45,54,45], level:0.06};
 		updateMesh(cmap);
 		flagDataLoaded=true;

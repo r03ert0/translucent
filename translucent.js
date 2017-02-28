@@ -42,16 +42,19 @@ var Translucent = {
     },
     init: function init() {
         var me = Translucent;
+        var w, h;
+        w = me.container.width();
+        h = me.container.height();
     // init the scene
         me.renderer = new THREE.WebGLRenderer({
             antialias				: true,	// to get smoother output
             preserveDrawingBuffer	: true	// to allow screenshot
         });
-        me.renderer.setSize( window.innerWidth, window.innerHeight );
+        me.renderer.setSize( w, h );
         document.getElementById('container').appendChild(me.renderer.domElement);
         me.scene = new THREE.Scene();
         me.scene.background = new THREE.Color( 0xffffff );
-        me.camera	= new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight,10, 100 );
+        me.camera	= new THREE.PerspectiveCamera(35, w/h, 10, 100 );
         me.camera.position.set(0, 0, 40);
         me.scene.add(me.camera);
 

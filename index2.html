@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Simple Translucent Brain</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+<div id="container"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="translucent.js"></script>
+
+<script>
+Translucent.widget({
+    container:$("#container"),
+    coordinates:[[38,0,32],[-8,38,-2],[-6,22,30],[26,44,0],[-2,-26,-10]]
+});
+</script>
+
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/controls/TrackballControls.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/modifiers/SubdivisionModifier.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/loaders/BinaryLoader.js"></script>
+-->
+
+</body>
+</html>

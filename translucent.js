@@ -30,6 +30,7 @@ var Translucent = {
         me.coordinates = param.coordinates;
         me.container = param.container;
         
+        console.log("Loading libraries");
         me.loadScript('https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js')
         .then(function(){return me.loadScript('https://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/controls/TrackballControls.js')})
         .then(function(){return me.loadScript('https://cdn.rawgit.com/mrdoob/three.js/dev/examples/js/modifiers/SubdivisionModifier.js')})
